@@ -1,0 +1,157 @@
+$pt: PT Sans, sans-serif
+$cormorant: Cormorant Infant, serif
+
+body
+  background: #fff
+  font-family: $pt
+  font-size: 16px
+  color: #262626
+  .container-fluid
+    padding: 0
+  .container
+    padding: 0
+
+  .header_wrapper.container
+    width: 1134px
+    header
+      .title
+        text-align: center
+        h1
+          font-family: $cormorant
+          font-weight: 700
+          font-size: 36px
+          line-height: 36px
+          padding: 36px 0 10px
+          letter-spacing: 0.18px
+          margin-bottom: 0px
+        p
+          font-family: $cormorant
+          font-weight: 400
+          font-style: italic
+          line-height: 24px
+          padding-bottom: 27px
+          color: #595959
+          letter-spacing: 0.08px
+      nav
+        ul
+          display: flex
+          justify-content: space-between
+          list-style-type: none
+          text-align: center
+          padding: 22px 0
+          margin-bottom: 0
+          border-top: 1px solid #e6e6e6
+          li
+            display: inline
+            line-height: 17px
+            &.active a
+              color: #48974c
+            &:hover a
+              color: #48974c
+            a
+              text-decoration: none
+              color: #262626
+              text-transform: uppercase
+              letter-spacing: 0.08px
+
+  .slider
+    .slider-content
+      height: 579px
+      .container
+        position: relative
+        .text-block
+          background-color: #ffffff
+          opacity: 0.95
+          margin-top: 80px
+          padding: 35px 40px
+          h3
+            font-family: $cormorant
+            font-size: 60px
+            line-height: 60px
+            font-weight: 700
+            color: #404040
+            margin-bottom: 20px
+          p
+            font-size: 18px
+            line-height: 28px
+            color: #404040
+
+      &.first-lar
+        background: url('../images/large1.jpg') no-repeat center
+        background-size: cover
+        .first-lit
+          width: 552px
+          height: 356px
+      &.second-lar
+        background: url('../images/large2.jpg') no-repeat center
+        background-size: cover
+        .second-lit
+          width: 593px
+          height: 356px
+      &.third-lar
+        background: url('../images/large2.jpg') no-repeat center
+
+
+  main
+    background-color: #f8f8f8
+    padding-top: 30px
+    .container
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      section
+        &.left-column
+          article.news-card
+            &:first-child
+              margin-bottom: 30px
+            .card
+              max-width: 552px
+              max-height: 693px
+              padding: 25px
+              box-shadow: 0 0 18px rgba(0, 0, 0, 0.04)
+              &-img-top
+              &-body
+                padding: 0
+                .card-title
+                  font-family: $cormorant
+                  font-style: italic
+                  font-weight: 600
+                  font-size: 30px
+                  line-height: 24px
+                  color: #262626
+                  margin-top: 12px
+                .card-text
+                  overflow: hidden
+                  display: -webkit-box
+                  -webkit-line-clamp: 6
+                  -webkit-box-orient: vertical
+                  color: #737373
+                  font-size: 16px
+                  line-height: 26px
+                  letter-spacing: 0.08px
+                .btn
+                  border-radius: 0
+                  box-shadow: 0 0 18px rgba(0, 0, 0, 0.04)
+                  font-size: 14px
+                  font-weight: 700
+                  letter-spacing: 0.07px
+                  text-transform: uppercase
+                .date
+                  margin-top: 13px
+                  display: flex
+                  flex-direction: row
+                  align-items: center
+                  img
+                    margin-right: 9px
+                  p
+                    margin: 0
+                    font-size: 14px
+                    color: #a6a6a6
+                    line-height: 26px
+                    letter-spacing: 0.07px
+                    text-transform: uppercase
+
+        &.right-column
+          article.thumb-cards
+            max-width: 552px
+            max-height: 1415px
